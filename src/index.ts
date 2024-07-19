@@ -1,2 +1,9 @@
-export const name : string = 'hola mundo!'
-console.log(name)
+import { Server } from "./presentation/server";
+
+(() => {
+  BootStrap();
+})();
+
+function BootStrap() {
+  Server.bootstrap();
+}
